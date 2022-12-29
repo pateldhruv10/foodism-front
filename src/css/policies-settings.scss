@@ -1,0 +1,127 @@
+/***  user profile detail  ***/
+.policies-settings{
+    .common-head{
+        // background: $bg3;
+        .ch-right{
+            a{
+                color: $dark-purple;
+                font-size: 18px;
+            }
+        }
+    }
+}
+.support{
+    .common-head{
+        // background: $bg4;
+        .ch-right{
+            a{
+                color: $dark-purple;
+                font-size: 18px;
+            }
+        }
+    }
+}
+.feedback{
+    .common-head{
+        // background: $light-pink ;
+        .ch-right{
+            a{
+                color: $dark-purple;
+                font-size: 18px;
+            }
+        }
+    }
+    .q-img{
+        width: 150px;
+    }
+}
+.common-inner{
+    padding: 20px;
+}
+.ps-list{
+    .ps-list-box{
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid $bg5;
+        display: flex;
+            justify-content: space-between;
+            align-items: center;
+        a{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-width: 100%;
+            padding: 0;
+        }
+        .ps-left{
+            display: flex;
+            min-width: 80%;
+            align-items: center;
+            .ps-icon{
+                width: 50px;
+                height: 50px;
+                background: $light-orange;
+                padding: 10px;
+                text-align: center;
+                @extend .border-radius2;
+                margin-right: 20px;
+                .q-img{
+                    img{
+                        height: 30px;
+                        width: auto;
+                    }
+                }
+            }
+            span{
+                font-size: 18px;
+                @extend .primary-font-semibold;
+                text-transform: capitalize;
+            }
+        }
+        .ps-right{
+            .q-img{
+                width: 10px;
+            }
+            .switch-cus{
+                .q-toggle{
+                    .q-toggle__inner{
+                        padding-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+.support-cl{
+    font-size: 16px !important;
+    color:$text-color2;
+    line-height: 1;
+}
+.sup-box{
+    b{
+        color: $text-color2;
+        font-size: 18px;
+    }
+    .sup-form{
+        .q-uploader__list{
+            min-height: 0;
+            padding: 0;
+            display: none;
+        }
+        .q-uploader__header{
+            .q-uploader__header-content{
+                padding: 3px 10px;
+                background: $bg6;
+                color: $text-color1;
+                .q-btn{
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+/***  media query  ***/
+@media only screen and (max-width: 479px) {
+
+}

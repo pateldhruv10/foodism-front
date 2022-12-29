@@ -1,0 +1,432 @@
+/***  user profile detail  ***/
+.user-profile{
+    .common-head{
+        // background: $bg2;
+        .ch-right{
+            a{
+                color: $text-color1;
+                font-size: 18px;
+            }
+        }
+    }
+    .common-inner{
+        padding: 20px;
+        .db-name{
+            @extend .background1;
+            @extend .border-radius3;
+            p{
+                color: $primary;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .follow-number{
+                display: flex;
+                justify-content: center;
+                div{
+                    padding: 0 30px;
+                    p{
+                        font-size: 24px;
+                        color: $text-color1;
+                        margin: 0;
+                    }
+                    span{
+                        color: $text-color2;
+                        font-size: 16px;
+                    }
+                }
+                .followers{
+                    border-right: 2px dashed $text-color2;
+                }
+            }
+
+        }
+        .db-about{
+            @extend .background1;
+            @extend .border-radius3;
+            p{
+                font-family: cooper_md_bt;
+                font-size: 20px;
+                color: $text-color1;
+            }
+            span{
+                font-size: 16px;
+                color: $text-color1;
+                justify-content: center;
+            }
+        }
+        .db-parsonal{
+            @extend .background1;
+            @extend .border-radius3;
+            div{
+
+                padding-bottom: 20px;
+                p{
+                    font-family: cooper_md_bt;
+                    font-size: 18px;
+                    color: $text-color1;
+                    margin-bottom: 0px;
+                    text-transform: capitalize;
+                }
+                span{
+                    font-size: 16px;
+                    color: $text-color1;
+                }
+            }
+            div:nth-child(2){
+                padding-bottom: 0;
+            }
+        }
+        .db-info{
+            @extend .background1;
+            @extend .border-radius3;
+            display: flex;
+            flex-wrap: wrap;
+            div{
+                width: 50%;
+                padding-bottom: 20px;
+                p{
+                    font-family: cooper_md_bt;
+                    font-size: 18px;
+                    color: $text-color1;
+                    margin-bottom: 0px;
+                    text-transform: capitalize;
+                }
+                span{
+                    font-size: 16px;
+                    color: $text-color1;
+                }
+            }
+            div:nth-child(3){
+                padding-bottom: 0;
+            }
+            div:nth-child(4){
+                padding-bottom: 0;
+            }
+        }
+        .db-food{
+            @extend .background1;
+            @extend .border-radius3;
+            p{
+                font-family: cooper_md_bt;
+                font-size: 18px;
+                color: $text-color1;
+                margin-bottom: 0px;
+            }
+            span{
+                font-size: 16px;
+                background: $whight;
+                padding: 5px 20px;
+                @extend .border-radius4;
+                margin: 5px 10px 5px 0;
+                display: inline-block;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+/***  user profile edit  ***/
+.user-profile-edit{
+    padding-bottom: 80px;
+    .common-head{
+        // background: $bg2;
+        .ch-right{
+            a{
+                color: $dark-purple;
+                font-size: 18px;
+            }
+        }
+    }
+    .common-inner{
+        padding: 20px;
+    }
+    label{
+        font-size: 16px;
+    }
+    label.fs14{
+        font-size: 14px;
+    }
+    .cat-tag{
+        span{
+            border:1px solid $primary;
+            padding: 5px 10px;
+            @extend .border-radius4;
+            color: $primary;
+            display: inline-flex;
+            align-items: center;
+            margin-right: 10px;
+            i{
+                font-weight: bold;
+                margin-left: 5px;
+                font-size: 16px;
+            }
+        }
+        .btn3{
+            @extend .border-radius4;
+            text-transform: capitalize;
+            span{
+               padding: 0;
+               color: $whight;
+               border:0px;
+               margin: 0;
+
+            }
+        }
+    }
+    .edit-cus-radio{
+        .q-radio{
+            margin-bottom: 0;
+        }
+    }
+}
+.upload-pr-pic{
+    .cus-uplode{
+        .q-uploader{
+            height: 130px;
+            width: 130px;
+            .q-uploader__header{
+                height: 130px;
+                .q-uploader__header-content{
+                    a{
+                        width: 130px;
+                        height: 130px;
+                    }
+                }
+            }
+            .q-uploader__list{
+                padding: 0;
+                @extend .border-radius3;
+                .q-uploader__file--img{
+                    height: 130px;
+                    min-width: 130px;
+                    .q-uploader__subtitle{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .img-upload{
+            width: 130px;
+            position: relative;
+            img{
+                width: 100%;
+                @extend .border-radius3;
+                height: 130px;
+            }
+            .img-control{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                color: $whight;
+                z-index: 11;
+                .q-btn{
+                    padding: 10px 5px;
+                }
+            }
+        }
+        .img-upload::after{
+            background: rgba(0,0,0,0.3);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            content: '';
+            height: 130px;
+            @extend .border-radius3;
+        }
+    }
+}
+.edit-cus-radio{
+    .q-radio{
+        margin-right: 10px;
+        margin-bottom: 10px;
+        .q-radio__label{
+            border:1px solid $bg5;
+            padding: 5px 15px;
+            @extend .border-radius4;
+        }
+        .q-radio__inner--truthy + .q-radio__label{
+            border-color: $primary;
+            color: $primary;
+        }
+        .q-radio__inner{
+            display: none;
+        }
+    }
+}
+.edit-cus-checkbox{
+    .q-checkbox{
+        margin-right: 15px;
+        margin-bottom: 15px;
+        .q-checkbox__label{
+            border:1px solid $bg5;
+            padding: 5px 15px;
+            @extend .border-radius4;
+            text-transform: capitalize;
+        }
+        .q-checkbox__inner--truthy + .q-checkbox__label{
+            border-color: $primary;
+            color: $primary;
+        }
+        .q-checkbox__inner{
+            display: none;
+        }
+    }
+}
+
+
+.search-city{
+    .pop-head{
+        background: $light-orange;
+        border-radius: 0;
+        padding-bottom: 30px;
+        .ing-search{
+            margin-top: 10px;
+            .q-field{
+                background: $whight;
+                padding: 0 15px;
+                @extend .border-radius3;
+                .q-field__control-container{
+                    align-items: center;
+                    flex-direction: row-reverse;
+                    .q-field__native{
+                        font-size: 18px; padding-left: 10px;
+                    }
+                    i{
+                        color: $text-color3;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .pop-body{
+        padding-top: 150px;
+        .search-city-box{
+            .q-list{
+                border: 0px;
+                .q-item{
+                    border: 0px;
+                    padding: 0;
+                    min-height: 30px;
+                    font-size: 16px;
+                }
+            }
+        }
+
+    }
+    .pop-head::after{
+        background: $whight;
+        height: 15px;
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+/***  media query  ***/
+@media only screen and (max-width: 479px) {
+
+
+    .upload-pr-pic{
+    .cus-uplode{
+        width: 100%;
+        .q-uploader{
+            height: 90px;
+            width: 90px;
+            .q-uploader__header{
+                height: 90px;
+                width: 100%;
+                .q-uploader__header-content{
+                    a{
+                        width: 90px;
+                        height: 90px;
+                    }
+                }
+            }
+            .q-uploader__list{
+                padding: 0;
+                @extend .border-radius3;
+                .q-uploader__file--img{
+                    height: 90px;
+                    min-width: 100%;
+                    .q-uploader__subtitle{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .img-upload{
+                width: 100%;
+                max-width: 90px;
+                img{
+                    height: 90px;
+                }
+            }
+            .img-upload::after{
+                height: 90px;
+            }
+    }
+}
+    .user-profile{
+        .common-inner{
+            .user-img{
+                .q-carousel{
+                    height: 335px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .upload-pr-pic{
+        .cus-uplode{
+            width: 100%;
+            .q-uploader{
+                height: 70px;
+                width: 70px;
+                .q-uploader__header{
+                    height: 70px;
+                    width: 100%;
+                    .q-uploader__header-content{
+                        a{
+                            width: 70px;
+                            height: 70px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            .q-btn__content{
+                                flex: inherit;
+                            }
+                        }
+                    }
+                }
+                .q-uploader__list{
+                    padding: 0;
+                    .q-uploader__file--img{
+                        height: 70px;
+                        min-width: 100%;
+                        .q-uploader__subtitle{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .img-upload{
+                    width: 100%;
+                    max-width: 70px;
+                    img{
+                        height: 70px;
+                    }
+                }
+                .img-upload::after{
+                    height: 70px;
+                }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+// Quasar SCSS (& Sass) Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass/SCSS variables found in Quasar's source Sass/SCSS files.
+
+// Check documentation for full list of Quasar variables
+
+// Your own variables (that are declared here) and Quasar's own
+// ones will be available out of the box in your .vue/.scss/.sass files
+
+// It's highly recommended to change the default colors
+// to match your app's branding.
+// Tip: Use the "Theme Builder" on Quasar's documentation website.
+
+$primary       : #e03c23;
+$whight        : #ffffff;
+$light-yello   : #faf9d1;
+$light-purple  : #d3d0f9;
+$purple        : #a5a0ec;
+$dark-purple   : #9652de;
+$light-purple1 : #e4d0fa;
+$green         : #146c00;
+$light-green   : #d1fad7;
+$light-green1  : #479c2c;
+$pink          : #ec82b8;
+$light-pink    : #fad1e6;
+$dark-pink     : #e8308c;
+$light-orange  : #faddd1;
+$light-orange1 : #f9b69a;
+$blue          : #3063a5;
+$light-blue    : #6e98ce;
+$red           : #da251e;
+$bg1           : #ebfad1;
+$bg2           : #e5d1fa;
+$bg3           : #d1e3fa;
+$bg4           : #d1f3fa;
+$bg5           : #d2d2d2;
+$bg6           : #f5f5f5;
+$bg7           : #eeeeee;
+$text-color1   : #212121;
+$text-color2   : #757575;
+$text-color3   : #616161;
+$dark-bg1      : #242424;
+$dark-bg2      : #121212;
+
+$dark          : #000;
+$secondary     : #26A69A;
+$accent        : #9C27B0;
+$positive      : #21BA45;
+$negative      : #C10015;
+$info          : #31CCEC;
+$warning       : #F2C037;
+
+
+$catbg1:#f6f6f6;
+$catbg2:#f6f6f6;
+$catbg3:#f6f6f6;
+$catbg4:#f6f6f6;
+$catbg5:#f6f6f6;
+
+$bgn1:#fedac1;
+$bgn2:#ff8737;
+
+//  most use common class
+.border-radius{border-radius: 100%;}
+.border-radius1{border-radius: 5px;}
+.border-radius2{border-radius: 10px;}
+.border-radius3{border-radius: 15px;}
+.border-radius4{border-radius: 20px;}
+
+.primary-font{font-family: 'lato'; font-weight: normal;}
+.primary-font-semibold{font-family: 'LatoSemibold';}
+.primary-font-bold{font-family: 'lato'; font-weight: bold;}
+.title-font{font-family: cooper_md_bt;}
+
+.background1{background: #f6f6f6;}

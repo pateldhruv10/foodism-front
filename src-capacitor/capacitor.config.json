@@ -1,0 +1,24 @@
+{
+  "appId": "com.foodism.app",
+  "appName": "Foodism",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "PushNotifications": {
+      "presentationOptions": [
+        "badge",
+        "sound",
+        "alert"
+      ]
+    },
+    "GoogleAuth": {
+      "scopes": [
+        "profile",
+        "email"
+      ],
+      "serverClientId": "1037609800511-7fslv2osn9e4in2gpm08b4gb98neck5s.apps.googleusercontent.com",
+      "forceCodeForRefreshToken": true
+    }
+  }
+}

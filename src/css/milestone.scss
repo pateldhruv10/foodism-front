@@ -1,0 +1,278 @@
+/***  milestone  ***/
+.milestone{
+    .common-head{
+        background: $primary;
+        color: $whight;
+        a{
+            color: $whight;
+        }
+        .ch-right{
+            a{
+                color: $whight;
+                font-size: 18px;
+            }
+        }
+    }
+    .common-inner{
+        padding: 20px;
+        .mt-cover{
+            .q-img{
+                @extend .border-radius3;
+            }
+        }
+        .upcoming-mt{
+            a{
+                font-size: 18px;
+                @extend .primary-font-semibold;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #d2d2d2;
+                padding: 10px 15px;
+                @extend .border-radius2;
+                .q-img{
+                    width: 10px;
+                }
+            }
+        }
+    }
+    .ms-heading{
+        text-align: center;
+        p{
+            font-size: 16px;
+            @extend .primary-font-semibold;
+            color: $text-color2;
+        }
+    }
+}
+
+.ms-box{
+    padding: 15px;
+    @extend .border-radius3;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .con-left{
+        width: 50px;
+        height: 50px;
+        @extend .border-radius;
+        // background: $whight;
+        margin-right: 15px;
+        color: $text-color1;
+    }
+    .con-right{
+        h6{
+            @extend .primary-font-semibold;
+            line-height: 1;
+            padding-bottom: 5px;
+        }
+        p{
+            margin: 0;
+            line-height: 1;
+            
+        }
+    }
+    .direct-link{
+        position: absolute;
+        right: 15px;
+        a{
+            display: flex;
+        }
+        .q-img{
+            width: 30px;
+        }
+    }
+}
+.ms-box.box-with-link{
+    padding-right: 50px;
+}
+.condition1{
+    background: $bg4;
+    h6{
+        color: $text-color1;
+    }
+    p{
+        color: $text-color1;
+    }
+}
+.condition2{
+    background: #faf9d1;
+    margin-top: -25px;
+    h6{
+        color: $text-color1;
+    }
+    p{
+        color: $text-color1;
+    }
+}
+.condition3{
+    background: $light-pink;
+    margin-top: -25px;
+    h6{
+        color: $text-color1;
+    }
+    p{
+        color: $text-color1;
+    }
+}
+.ms-box:last-child{
+    padding-bottom: 15px;
+}
+// .milestone-wrapper{
+//     margin-top: 25px;
+//     margin-bottom: 25px;
+//     position: relative;
+//     margin-top: -130px;
+//     .mt-list{
+//         display: flex;
+//         overflow: auto;
+//         height: 200px;
+//         align-items: flex-end;
+//         .mt-box{
+//             display: inline-flex;
+//             margin-right: 30px;
+//             position: relative;
+//             .mt-number{
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+//                 width: 40px;
+//                 height: 40px;
+//                 background: #d2d2d2;
+//                 @extend .border-radius2;
+//                 font-size: 18px;
+//                 @extend .title-font;
+//             }
+//             .mt-dis{
+//                 position: absolute;
+//                 background: $dark;
+//                 color: $whight;
+//                 padding: 10px;
+//                 width: 150px;
+//                 bottom: 50px;
+//                 z-index: 11;
+//                 left: -55px;
+//                 @extend .border-radius2;
+//                 text-align: center;
+//                 .dis-t{
+//                     font-size: 16px;
+//                     @extend .primary-font-semibold;
+//                     display: block;
+//                 }
+//             }
+//             .mt-dis::after{
+//                 background: url('~assets/d-arrow.svg');
+//                 width: 40px;
+//                 background-size:100%;
+//                 position: absolute;
+//                 bottom: -23px;
+//                 margin: 0 auto;
+//                 content: '';
+//                 height: 40px;
+//                 left: 0;
+//                 right: 0;
+//             }
+//         }
+//         .mt-box:nth-child(n) .mt-number{
+//             background: $light-orange1;
+//         }
+//         .mt-box:nth-child(n+6) .mt-number{
+//             background: $pink;
+//         }
+//         .mt-box:nth-child(n+11) .mt-number{
+//             background: $blue;
+//         }
+//     }
+//     .middle-line{
+//         position: absolute;
+//         width: 100%;
+//         height: 5px;
+//         bottom: 17px;
+//         transform: translateY(-50%);
+//         background: #d9d9d9;
+//     }
+//     .mt-list::-webkit-scrollbar {
+//         display: none;
+//     }
+    
+// }
+
+/***  upcoming milestone  ***/
+.upMilestone{
+    .common-head{
+        background: $light-green1;
+        color: $whight;
+        a{
+            color: $whight;
+        }
+    }
+    .common-inner{
+        padding: 20px;
+    }
+}
+.ms-inner.up-ms{
+    .ms-heading{
+        text-align: center;
+        p{
+            font-size: 16px;
+            @extend .primary-font-semibold;
+            color: $text-color2;
+        }
+    }
+    .ms-box{
+        border:1px solid #d2d2d2;
+        background: $bg6;
+    }
+}
+// .upmt-list{
+//     .uplist-box{
+//         display: flex;
+//         align-items: center;
+//         margin-bottom: 40px;
+//         .box-number{
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             min-width: 40px;
+//             height: 40px;
+//             background: #d2d2d2;
+//             @extend .border-radius2;
+//             font-size: 18px;
+//             @extend .title-font;
+//             margin-right: 20px;
+//             position: relative;
+//         }
+//         .box-number::after{
+//             width: 5px;
+//             height: 75%;
+//             background: #d2d2d2;
+//             content: '';
+//             left: 0;
+//             right: 0;
+//             position: absolute;
+//             top: 45px;
+//             margin: 0 auto;
+//         }
+//         .upmt-details{
+//             h6{
+//                 font-size: 16px;
+//                 line-height: 1;
+//                 padding-bottom: 5px;
+//             }
+//             p{
+//                 margin: 0;
+//                 color: $text-color2;
+//                 line-height: 1;
+//             }
+//         }
+//     }
+//     .uplist-box:last-child .box-number::after{
+//         display: none;
+//     }
+// }
+
+/***  media query  ***/
+@media only screen and (max-width: 479px) {
+
+}

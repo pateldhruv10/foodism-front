@@ -1,0 +1,30 @@
+/***  business profile footer  ***/
+.footer.bus-pr-ftr{
+    background: $text-color1;
+    z-index: 111;
+    .pls-btn{
+        position: absolute; 
+        right: 20px; 
+        bottom: 60px;
+        i{
+            width: 45px; 
+            height: 45px; @extend .border-radius; 
+            background: $primary; 
+            color: $whight; 
+            font-size: 25px; 
+            margin: -15px auto 0; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+        }
+    }
+    .q-tab{
+        font-size: 18px;
+    }
+}
+.footer.bus-pr-ftr:before{
+    display: none;
+}
+.footer.bus-pr-ftr::after{
+    display: none;
+}

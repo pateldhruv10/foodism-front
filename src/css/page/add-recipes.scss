@@ -1,0 +1,405 @@
+/***  add recipe form  ***/
+.add-recipes{
+    .form-head{
+        z-index: 11;
+        padding: 15px 20px;
+        .bsp-top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h5{
+                @extend .primary-font-semibold;
+            }
+            span{
+                color: $text-color1;
+                font-size: 22px;
+                margin-right: 10px;
+            }
+            a{
+                font-size: 16px;
+                @extend .primary-font-semibold;
+            }
+        }
+    }
+    .st1{
+        background: $bg2;
+    }
+    .add-rcp-btm{
+        padding: 15px 20px;
+        .q-btn{
+            width: 47%;
+        }
+    }
+}
+
+.add-recipe-step{
+    padding-top: 62px;
+    .q-stepper__header{
+        position: fixed;
+        width: 100%;
+        z-index: 11;
+       // display: none;
+        .q-stepper__tab{
+            min-height: 5px;
+            background: rgba(0,0,0,0.2);
+            padding: 0;
+            border-radius: 0;
+            margin-right: 2px;
+            margin-top: -5px;
+            z-index: 11;
+            .q-stepper__dot{
+                display: none;
+            }
+        }
+        .q-stepper__tab--active{
+            background: $text-color1;
+        }
+    }
+    .q-stepper__content{
+        .q-stepper__step-inner{
+            padding: 0;
+        }
+        .seller-form-btm{
+            background: $whight; z-index: 11111;
+        }
+    }
+    .q-stepper__nav{
+        padding-top: 0;
+    }
+}
+
+.form-md{
+    background: $whight;
+    padding:20px 20px 100px;
+    overflow: auto;
+    h4{
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        font-size: 24px;
+    }
+}
+.or-separator{
+    border: 1px solid $light-orange1;
+    width: 100%;
+    height: 2px;
+    margin: 20px 0 50px;
+    text-align: center;
+    span{
+        background: $whight;
+        padding: 10px 25px;
+        color: $text-color1;
+        font-size: 20px;
+        margin: -25px auto 0;
+        width: 70px;
+        display: block;
+    }
+}
+.total-time{
+    border-radius: 10px;
+    padding: 15px;
+    background-color: $bg4 ;
+    p{
+        font-size: 16px;
+        margin: 0;
+    }
+}
+.no-step-added{
+    .no-step-content{
+        ul{
+            padding: 0;
+            li{
+                font-size: 16px;
+                color: $text-color2;
+                padding: 10px 0;
+                list-style-type: none;
+            }
+        }
+    }
+}
+.add-rcp-step{
+    .full-h{
+        .pop-head{
+            background: $bg4;
+            border-radius: 0;
+            padding-bottom: 30px;
+            h6{
+                @extend .primary-font-bold;
+            }
+        }
+        .pop-head::after{
+            background: $whight;
+            height: 15px;
+            width: 100%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .cus-uplode{
+            .q-uploader{
+                width: 100%;
+                height: 250px;
+                .q-uploader__header{
+                    height: 250px;
+                    .q-uploader__header-content{
+                        a{
+                            height: 250px;
+                            width: 100%;
+                        }
+                        .column.justify-center{
+                            display: block;
+                            position: absolute;
+                            width: 100%;
+                            margin: 0;
+                            .q-uploader__title{
+                                color: $text-color1;
+                                text-align: center;
+                                padding-top: 60px;
+                            }
+                        }
+                    }
+                }
+            }
+            .q-uploader__list{
+                .q-uploader__file--img{
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
+.st-tag{
+    color: $text-color2;
+    b{
+        color: $text-color1;
+    }
+    ul{
+        padding: 0;
+        margin-bottom: 0;
+        display: flex;
+        li{
+            list-style-type: none;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            .q-btn{
+                @extend .primary-font-semibold;
+                padding: 7px 10px 5px;
+                @extend .border-radius4;
+                text-transform: capitalize;
+                line-height: 1;
+                min-height: auto;
+                .q-btn__content{
+                    color: $text-color1;
+                    i{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+.add-ing{
+    .full-h{
+        .pop-head{
+            background: $light-green;
+            border-radius: 0;
+            padding-bottom: 30px;
+            h6{
+                @extend .primary-font-bold;
+            }
+        }
+        .pop-head::after{
+            background: $whight;
+            height: 15px;
+            width: 100%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+.add-ing-box{
+    h6{
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .form-group{
+        margin-bottom: 6px;
+        padding-bottom: 6px;
+        // border-bottom: 0px;
+        // .ing-name{
+        //     border-bottom: 1px solid #d2d2d2;
+        // }
+        // .q-field__native{
+        //     border-bottom: 1px solid #d2d2d2;
+        // }
+    }
+    .controll-icon{
+        text-align: right;
+        .material-icons{
+            font-size: 22px;
+            color: $primary;
+        }
+        i{
+            font-size: 22px;
+            color: $primary;
+        }
+    }
+    .add-more-ing{
+        .form-group{
+            margin-bottom: 20px;
+        }
+    }
+    .label-none{
+        .q-field__control{
+            height: 21px;
+            .q-field__native{
+                padding: 0;
+            }
+        }
+    }
+     
+}
+.ing-search{
+    margin-top: 10px;
+    .q-field{
+        background: $whight; 
+        padding: 0 15px; 
+        @extend .border-radius3;
+        .q-field__control-container{
+            align-items: center; 
+            flex-direction: row-reverse;
+            .q-field__native{
+                font-size: 18px; padding-left: 10px;
+            }
+            i{
+                color: $text-color3; 
+                font-size: 30px;
+            }
+        }
+    }
+}
+.add-ing{
+    .full-h.search-ing-cus{
+        .pop-body{
+            padding-top: 150px;
+        }
+    }
+}
+.ing-name{
+    @extend .primary-font-semibold;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.ed-popup{
+    font-size: 16px;
+    @extend .primary-font-semibold;
+    i{
+        font-size: 26px;
+    }
+    span{
+        padding-top: 3px;
+        padding-left: 10px;
+        display: flex;
+    }
+}
+.cf-popup{
+    font-size: 18px;
+    @extend .primary-font-semibold;
+    a{
+        display: flex;
+        align-items: center;
+        line-height: 1;
+        i{
+            font-size: 30px; 
+        }
+        span{
+            margin-left: 10px;
+            line-height: 1;
+            display: flex;
+            padding-top: 3px;
+        }
+    }
+    
+}
+.step-list{
+    ul{
+        padding: 0;
+        .step-list-box{
+            list-style-type: none;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #d2d2d2;
+            h5{
+                font-size: 18px;
+                color: $primary;
+                @extend .primary-font-semibold;
+                display: flex;
+                justify-content: space-between;
+                .step-delet{
+                    color: $text-color1;
+                    font-size: 20px;
+                }
+            }
+            .panel-body{
+                    .step-list-dis{
+                        display: flex;
+                        .step-img{
+                            .upload-option{
+                                min-width: 80px;
+                                height: 80px;
+                                @extend .border-radius2;
+                                border:1px solid $bg5;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                .icon{
+                                    font-size: 30px;
+                                    color: $text-color2;
+                                }
+                            }
+                        }
+                        .step-dis{
+                            padding-left: 15px;
+                            font-size: 15px;
+                            width: 100%;
+                            .q-field--float{
+                                .q-field__label{
+                                    display: none;
+                                }
+                            }
+                            .q-textarea{
+                                background: #f6f6f6;
+                                padding: 10px;
+                                .q-field__control{
+                                    border: 0px;
+                                }
+                                .q-field__control-container{
+                                    padding: 0;
+                                    .q-field__label{
+                                        top: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+            }
+        }
+    }
+}
+.final-not-popup{
+    .cp-btn{
+        display: flex;
+        justify-content: space-between;
+        .q-btn{
+            width: 47%;
+            margin-right: 0 !important;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - beta
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set environment
+        run: |
+          case $GITHUB_REF in
+            refs/heads/develop )
+              _env=dev
+              ;;
+            refs/heads/main )
+              _env=prod
+              ;;
+           esac
+           echo "_ENV=$_env" >> $GITHUB_ENV
+
+      - name: Configure Awscli
+        run: |
+          make awscli
+        env:
+          _AWS_ACCESS_KEY_ID: ${{ secrets._AWS_ACCESS_KEY_ID }}
+          _AWS_SECRET_ACCESS_KEY: ${{ secrets._AWS_SECRET_ACCESS_KEY }}
+
+      - name: Install npm dependecy 
+        run: make Install
+
+      - name: Install quasar CLI
+        run: make quasar
+
+      - name: Build quasar
+        run: make build
+
+      - name: Deployment on S3
+        run: make deploy

@@ -1,0 +1,318 @@
+/***  Dark Mode  ***/
+.body--dark{
+    /***  commen css  ***/
+    * a{
+        color: $whight;
+    }
+    h1, h2, h3, h4, h5, h6{
+        color: $whight;
+    }
+    .q-page-container{
+        background: $dark-bg1;
+    }
+    .full-popup{
+        .q-dialog__inner{
+            .full-h{
+                background: $dark-bg1;
+            }
+        }
+    }
+
+    /***  header  ***/
+    .q-header{
+        background: $dark-bg2;
+    }
+    .sub-menu{
+        .q-tab__label{
+            color: $whight !important;
+        }
+    }
+    .q-header{
+        .header-right{
+            .q-img{
+                .q-img__container{
+                    .q-img__image{
+                        filter: invert(1);
+                    }
+                }
+            }
+        }
+    }
+
+    /***  side bar ***/
+    .sidebar-menu{
+        .q-list{
+            .q-item{
+                .sidebar-list{
+                    .q-img{
+                        img{
+                            filter: invert(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /***  category box  ***/
+    .cat-box-list{
+        .cat-box{
+            h6{
+                color: $text-color1;
+            }
+        }
+    }
+
+    /***  inner page content  ***/
+    .common-inner{
+        background: $dark-bg1;
+        .q-dark{
+            background: transparent;
+        }
+    }
+    .common-head{
+        background: $dark-bg2 !important;
+        .ch-left{
+            color: $whight;
+            a{
+                color: $whight;
+            }
+        }
+        .ch-right{
+            a{
+                color: $whight;
+            }
+        }
+    }
+    .head-fix{
+        .common-head::after{
+            background: $dark-bg1;
+        }
+    }
+    .home-tab{
+        .q-btn{
+            color: $text-color1;
+        }
+    }
+
+    /***  recipe box  ***/
+    .recipe-box{
+        .recipe-head{
+            .rec-user-detail{
+                .post-time{
+                    color: $whight;
+                }
+            }
+        }
+    }
+    .recipe-box::after{
+        background: $dark-bg1 !important;
+    }
+    .post-btm{
+        ul{
+            li{
+                img{
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+    .add-btns{
+        a{
+            color: $text-color1;
+        }
+    }
+
+
+    /***  recipe detail page  ***/
+    .recipe-detail{
+        .recipe-description{
+            .ingredient-list{
+                .q-item{
+                    .q-item__section{
+                        .q-item__label{
+                            color: $whight;
+                        }
+                    }
+                }
+            }
+            .q-expansion-item__content{
+                .q-dark{
+                    background: transparent;
+                }
+            }
+            .step-list-view{
+                .recipe-step-dis{
+                    .step-title{
+                        color: $text-color1;
+                        .q-icon{
+                            color: $text-color1;
+                        }
+                    }
+                }
+            }
+            .detail-title::after{
+                background: $dark-bg1;
+            }
+        }
+    }
+
+    /***  form componant  ***/
+    .q-btn.btn3{
+        background: $dark;
+        color: $whight;
+    }
+    .q-option-group{
+        .q-radio{
+            color: $whight;
+        }
+    }
+    .cus-uplode{
+        .upload-option{
+            background: transparent;
+            .icon{
+                i{
+                    color: $whight;
+                }
+                span{
+                    color: $whight;
+                }
+            }
+        }
+    }
+    .form-group{
+        .q-field--float{
+            .q-field__label{
+                color: $whight;
+            }
+        }
+    }
+    .box-shadow-cus{
+        background: $dark-bg2;
+    }
+    .select-cus-popup{
+        .pop-head{
+            background: $dark;
+            padding: 15px;
+        }
+        .pop-body{
+            background: $dark-bg1;
+        }
+    }
+
+
+    /***  event section  ***/
+    .q-dark.add-bites-step{
+        background: transparent;
+        border: 0;
+    }
+    .he-box{
+        background: $dark-bg1 !important;
+        .he-card{
+            .he-dis{
+                background: $dark;
+            }
+        }
+    }
+    .fix-top{
+        .q-tabs{
+            background: $dark-bg1;
+        }
+    }
+
+    /***  search page  ***/
+    .search-recipes-cus{
+        .search-title{
+            color: $text-color1;
+        }
+    }
+    .search-city{
+        .pop-head{
+            background: $dark;
+            .ing-search{
+                .q-field{
+                    background: $dark-bg1;
+                }
+            }
+        }
+        .pop-head::after{
+            background: $dark-bg1;
+        }
+    }
+
+    /***  profile page  ***/
+    .up-btns{
+        .q-btn{
+            color: $text-color1;
+        }
+    }
+    .fl-counter{
+        ul{
+            li:first-child{
+                border-color: $whight !important;
+            }
+        }
+    }
+    .rc-grid{
+        .rc-list{
+            .draft-box{
+                background: $dark;
+            }
+        }
+    }
+    .profile-head{
+        background: $dark;
+    }
+    .up-all{
+        .q-card{
+            background: $dark-bg1;
+        }
+        .q-tab-panels{
+            background: $dark-bg1;
+        }
+    }
+
+    /***  vlog  ***/
+    .detail-title::after{
+        display: none;
+    }
+    .add-loc{
+        .q-img{
+            img{
+                filter: invert(1);
+            }
+        }
+    }
+    .add-bites-btm{
+        .q-btn{
+            color: $text-color1;
+        }
+    }
+
+    /***  add recipes  ***/
+    .qut-box{
+        .vue-scroll-picker{
+            .vue-scroll-picker-item-selected{
+                color: $whight;
+            }
+        }
+    }
+    .time-box{
+        .vue-scroll-picker{
+            .vue-scroll-picker-item-selected{
+                color: $whight;
+            }
+        }
+    }
+    .add-ing{
+        .full-h{
+            .pop-head{
+                background: $dark;
+            }
+            .pop-head::after{
+                background: $dark-bg1;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,110 @@
+/***  Date Selector  ***/
+.qut-box{
+    margin: 40px auto 60px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 200px;
+    .qut-no{
+        padding: 0 15px;
+        min-width: 70px;
+        p{
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    }
+    .qut-type{
+        padding: 0 15px;
+        min-width: 130px;
+        p{
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    }
+    .vue-scroll-picker{
+        .vue-scroll-picker-item{
+            font-size: 18px;
+            padding: 10px 0;
+            color: $text-color2;
+        }
+        .vue-scroll-picker-layer{
+            .vue-scroll-picker-layer-selection{
+                font-size: 18px;
+                
+            }
+        }
+        .vue-scroll-picker-item-selected{
+            font-size: 20px;
+            padding: 10px 0px;
+            font-weight: bold;
+            color: $text-color1;
+        }
+        .vue-scroll-picker-layer-top{
+            border-bottom: 0;
+            background: transparent;
+        }
+        .vue-scroll-picker-layer-bottom{
+            border-top:0;
+            background: transparent;
+        }
+    }
+}
+.qut-box::after{
+    width: 100%;
+    height: 2px;
+    background: $text-color1;
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    content: '';
+}
+.qut-box::before{
+    width: 100%;
+    height: 2px;
+    background: $text-color1;
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+    content: '';
+}
+
+.qut-box.qut-cus-box{
+    max-width: 300px;
+    .qut-no{
+        .q-field{
+            padding-top: 40px;
+            .q-field__inner{
+                .q-field__control-container{
+                    text-align: center;
+                    .q-field__label{
+                        padding-top: 2px;
+                        font-size: 20px;
+                        text-align: center;
+                        font-weight: bold;
+                        left: 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+        .q-field.q-field--float{
+            .q-field__inner{
+                .q-field__control-container{
+                    .q-field__label{
+                        display: none;
+                    }
+                    .q-field__native{
+                        padding-top: 10px;
+                        font-size: 20px;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

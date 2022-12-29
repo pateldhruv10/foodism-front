@@ -1,0 +1,28 @@
+{
+  "name": "foodism",
+  "version": "0.0.1",
+  "description": "A Quasar Framework app",
+  "private": true,
+  "dependencies": {
+    "@byteowls/capacitor-oauth2": "^3.0.1",
+    "@capacitor-community/electron": "^4.1.0",
+    "@capacitor-community/facebook-login": "^3.4.0",
+    "@capacitor-community/fcm": "^2.0.2",
+    "@capacitor/android": "^3.6.0",
+    "@capacitor/app": "^1.1.1",
+    "@capacitor/camera": "^1.3.1",
+    "@capacitor/cli": "^3.6.0",
+    "@capacitor/clipboard": "^1.0.8",
+    "@capacitor/core": "^3.6.0",
+    "@capacitor/device": "^1.1.2",
+    "@capacitor/filesystem": "^1.1.0",
+    "@capacitor/geolocation": "^1.3.1",
+    "@capacitor/push-notifications": "^1.0.9",
+    "@capacitor/share": "^1.1.2",
+    "@capacitor/storage": "^1.2.5",
+    "@codetrix-studio/capacitor-google-auth": "^3.1.4",
+    "firebase": "^9.8.3",
+    "jetifier": "^2.0.0"
+  },
+  "author": ""
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Burger",
+    "desc": "Test",
+    "video": "https://d2272qlpwmmv4n.cloudfront.net/9d957ff3-69f6-44b2-b09a-b7867bdf6737/AppleHLS1/Chocolatecookies.m3u8",
+    "id": 1,
+    "video_category": ["food & health"],
+    "image": "https://source.unsplash.com/random/1170x800/?burger"
+  },
+  {
+    "name": "Pizza",
+    "desc": "Test2",
+    "video": "https://d2272qlpwmmv4n.cloudfront.net/9d957ff3-69f6-44b2-b09a-b7867bdf6737/AppleHLS1/Chocolatecookies.m3u8",
+    "id": 2,
+    "video_category": ["food & health"],
+    "image": "https://source.unsplash.com/random/1170x800/?veg-pizza"
+  }
+]
+

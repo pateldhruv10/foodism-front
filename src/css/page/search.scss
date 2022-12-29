@@ -1,0 +1,199 @@
+/***  search page  ***/
+.search-page{
+    .common-head{
+        @extend .background1;
+        .search-head{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            .q-form{
+                width: 100%;
+            }
+            label{
+                width: 100%;
+                .q-field--filled{
+                    .q-field__control{
+                        @extend .border-radius3;
+                        background: $whight;
+                    }
+                }
+                .q-field__control{
+                    height: 45px;
+                    .q-field__control-container{
+                        align-items: center;
+                        flex-direction: row-reverse;
+                        background: $whight;
+                        @extend .border-radius3;
+                        padding: 0 15px;
+                        .q-field__native{
+                            padding-left: 10px; font-size: 18px;
+                        }
+                        i{
+                            color: $text-color3; font-size: 30px;
+                        }
+                    }
+                }
+            }
+            .q-form{
+                width: 100%;
+            }
+            label.q-field--standard{
+                .q-field__control:before{
+                    display: none;
+                }
+            }
+            .search-filter{
+                margin-left: 10px;
+                min-width: 40px;
+                height: 40px;
+                background: $primary;
+                color: $whight;
+                @extend .border-radius;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i{
+                    color: $whight;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .common-inner{
+        padding: 20px;
+        h6{
+            margin-bottom: 15px;
+        }
+        .q-card{
+            box-shadow: none;
+            .q-tabs{
+                .q-tabs__content{
+                    flex: inherit;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-bottom: 15px;
+                    .q-tab{
+                        flex: inherit;
+                        padding: 0;
+                        min-height: inherit;
+                        .q-tab__content{
+                            min-width: auto;
+                            color: $dark-bg2;
+                            @extend .primary-font-semibold;
+                            text-transform: capitalize;
+                            font-size: 16px;
+                            .q-tab__label{
+                                text-transform: capitalize;
+                                font-size: 22px;
+                                @extend .primary-font-semibold;
+                            }
+                            .q-tab__indicator{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .q-tab-panels{
+                .q-panel{
+                    .q-tab-panel{
+                        padding: 0;
+                        .search-title{
+                            font-size: 18px;
+                            @extend .primary-font-semibold;
+                            text-transform: capitalize;
+                        }
+                        .search-recipes-cus{
+                            padding: 15px;
+                            @extend .border-radius3;
+                            background: $light-green;
+                            .search-rcp-list{
+                                display: flex;
+                                overflow-x: auto;
+                                .search-rcp-box{
+                                    margin-right: 15px;
+                                    .q-img{
+                                        width: 110px;
+                                        @extend .border-radius2;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                            .search-rcp-list::-webkit-scrollbar {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.search-recipe-list{padding: 30px 20px;}
+.search-rc-box{padding-bottom: 15px; border-bottom: 3px solid #f7f7f7; display: flex; margin-bottom: 20px;}
+.search-rc-box:last-child{border-bottom: 0;}
+.search-rc-box .search-rc-img .q-img{width: 90px; height: 90px; @extend .border-radius3;}
+.search-rc-box .search-rc-img a{position: relative; display: inline-flex;}
+.search-rc-box .search-rc-img .veg-box{position:absolute; top: 10px; right: 10px;}
+.search-rc-box .search-rc-dis{padding-left: 15px;}
+.search-rc-box .search-rc-dis .rc-name{display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; font-size: 20px; font-family: cooper_md_bt;}
+.search-rc-dis .wh-pr{margin: 0; font-size: 18px; color: $text-color3; font-weight: 600;}
+.search-rc-dis .wh-pr span{padding: 0 10px; position: relative;}
+.search-rc-dis .wh-pr span:first-child{padding-left: 0;}
+.search-rc-dis span.sp-dot::after{width: 5px; height: 5px; content: ''; background: $light-blue; position: absolute; top: 40%; right: -4px; @extend .border-radius;}
+.search-rc-dis .rc-info{font-size: 16px; color: $text-color3; margin: 0; display: flex;}
+.search-rc-dis .rc-info span{padding: 0 10px; position: relative; display: inline-flex; align-items: center;}
+.search-rc-dis .rc-info span:first-child{padding-left: 0;}
+.search-rc-dis .rc-info span .q-img{width: 24px; margin-right: 5px;}
+.search-rc-dis .rc-info span.hd-name{display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; max-width: 50%;}
+.search-rc-dis span.hd-name::after{right: 0;}
+.search-rc-dis .rc-info span i{font-size: 18px;}
+
+.search-seller-list{padding: 30px 20px;}
+.search-sl-box{padding-bottom: 15px; border-bottom: 3px solid #f7f7f7; display: flex; margin-bottom: 20px;}
+.search-sl-box:last-child{border-bottom: 0;}
+.search-sl-box .search-sl-img .q-img{width: 90px; height: 90px; @extend .border-radius;}
+.search-sl-box .search-sl-img a{position: relative; display: inline-flex;}
+.search-sl-box .search-sl-dis{padding-left: 15px;}
+.search-sl-box .search-sl-dis .sl-name{display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; font-size: 20px; font-family: cooper_md_bt;}
+.search-sl-dis span.sp-dot::after{width: 5px; height: 5px; content: ''; background: $light-blue; position: absolute; top: 40%; right: -4px; @extend .border-radius;}
+.search-sl-dis .sl-info{font-size: 18px; color: $text-color3; margin: 0; display: flex;}
+.search-sl-dis .sl-info span{padding: 0 10px; position: relative; display: inline-flex; align-items: center;}
+.search-sl-dis .sl-info span:first-child{padding-left: 0;}
+.search-sl-dis .sl-info span .q-img{width: 24px; margin-right: 5px;}
+.search-sl-dis span.hd-name::after{right: 0;}
+.search-sl-dis .sl-info span i{font-size: 18px;}
+.search-sl-dis .sl-rt{font-size: 18px; color: $text-color3;}
+.search-sl-dis .sl-rt .q-img{width: 30px; margin-right: 5px;}
+
+.no-search-result{
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 10px solid $light-yello;
+    p{
+        font-size: 20px;
+        color: $text-color2;
+    }
+}
+/***  media query  ***/
+@media only screen and (max-width: 479px) {
+    .search-page{
+        .common-inner{
+            .q-card{
+                .q-tabs{
+                    .q-tabs__content{
+                        .q-tab{
+                            .q-tab__content{
+                                .q-tab__label{
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

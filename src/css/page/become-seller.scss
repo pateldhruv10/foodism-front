@@ -1,0 +1,317 @@
+/***  become a seller  ***/
+.become-seller{
+    background-image: url('~assets/bs-bg.jpg');
+    height: 100vh; 
+    background-size: cover; 
+    background-position: center; 
+    z-index: 11111; 
+    position: fixed; 
+    width: 100%;
+    .bsp-top a{
+        font-size: 22px; 
+        color: $whight;
+    }
+    .bs-title{
+        h4{
+            color: $whight;
+        }
+        p{
+            color: $whight; 
+            font-size: 18px;
+        }
+    }
+    .bs-info{
+        background: $whight; 
+        border-top-left-radius: 15px; 
+        border-top-right-radius: 15px;
+        .bs-detail{
+            .bs-box{
+                padding-bottom: 10px; 
+                margin-bottom: 10px; 
+                border-bottom: 1px solid $bg6; 
+                display: flex;
+                align-items: center;
+                .bs-icon{
+                    width: 50px; 
+                    height: 50px; 
+                    background: #fff1e9; @extend .border-radius2; 
+                    padding: 10px;
+                }
+                .bs-box-info{
+                    padding-left: 10px;
+                    p{
+                        font-size: 20px; 
+                        margin-bottom: 0px; 
+                        font-weight: bold;
+                    }
+                    span{
+                        color: $text-color1; 
+                        font-size: 16px; 
+                        line-height: 1;
+                    }
+                }
+            }
+            .bs-box:last-child{
+                border-bottom: 0;
+            }
+        }
+    }
+}
+
+.become-seller::after{
+    background: rgba(0, 0, 0, 0.5); 
+    width: 100%; 
+    height: 100vh; 
+    content: ''; 
+    left: 0; 
+    top: 0; 
+    position: absolute; 
+    z-index: -1;
+}
+
+/***  seller form  ***/
+.q-page.seller-form{
+    background: $whight;
+}
+
+.seller-form{
+    .form-head{
+        z-index: 11;
+        background: $whight;
+        padding-bottom: 10px;
+        .bsp-top{
+            span{
+                color: $text-color1;
+                font-size: 22px;
+            }
+        }
+        .btn3{
+            min-width: 100px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.seller-form-step{
+    padding-top: 50px;
+    .q-stepper__header{
+        display: none;
+    }
+    .q-stepper__content{
+        .q-stepper__step-inner{
+            padding: 0;
+        }
+        .seller-form-btm{
+            background: $whight; z-index: 11111;
+        }
+        .mob-no{
+            .q-field{
+                padding-bottom: 0;
+            }
+            .btn3{
+                min-width: 101px;
+            }
+        }
+        .mob-otp{
+            .btn3{
+                min-width: 101px;
+            }
+        }
+    }
+    .q-stepper__nav{
+        padding-top: 0;
+    }
+    .seller-form-btm{
+        background: $whight;
+        z-index: 11;
+    }
+}
+
+.step-number{
+    font-size: 18px;
+    font-weight: 600;
+    color: $primary;
+    text-transform: uppercase;
+}
+
+.form-md{
+    background: $whight;
+    padding-bottom: 100px;
+    overflow: auto;
+    h4{
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        font-size: 24px;
+    }
+    h4::after{
+        width: 100%;
+        position: absolute;
+        background: $light-purple;
+        height: 8px;
+        bottom: 8px;
+        left: 0;
+        content: '';
+        z-index: -1;
+    }
+    .ac-list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .ac-box{
+            position: relative;
+            padding: 0;
+            width: 100%;
+            margin-bottom: 20px;
+            .q-checkbox{
+                width: 100%;
+                .q-checkbox__inner{
+                    position: absolute;
+                    z-index: 11;
+                    top: 0px;
+                    left: 0px;
+                    .q-checkbox__bg{
+                        border-color: transparent;
+                    }
+                }
+                .q-checkbox__inner--truthy{
+                    color: $primary;
+                    .q-checkbox__bg{
+                        @extend .border-radius;
+                        border:4px solid;
+                    }
+                }
+                .q-checkbox__label{
+                    width: 100%;
+                }
+            }
+            .ac-info{
+                .q-img{
+                    height: 150px;
+                }
+                .cat-info{
+                    position: absolute; top: 0; left: 0; right: 0;     bottom: 0; margin: 0; display: flex; justify-content: center; align-items: center; font-size: 20px; color: $whight; z-index: 2; text-transform: capitalize; font-weight: bold;
+                    flex-direction: column;
+                    h6{
+                        color: $whight;
+                        font-family: lato;
+                        font-weight: bold;
+                    }
+                    span{
+                        font-weight: normal;
+                        font-size: 16px;
+                        padding: 10px 20px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.loc-btn .q-btn{
+    font-weight: bold;
+    i{
+        font-size: 20px;
+    }
+}
+
+.loc-popup{
+    z-index: 11111;
+}
+
+.loc-icon{
+    position: relative;
+    span.material-icons{
+        font-size: 18px;
+        top: 20px;
+        color: $primary;
+    }
+}
+
+.loc-box{
+    border: 1px solid $bg5;
+    @extend .border-radius2;
+    display: flex;
+    .loc-img{
+        .q-img{
+            width: 75px;
+            min-width: 75px;
+            @extend .border-radius2;
+            max-height: 75px;
+        }
+    }
+    .loc-detail{
+        p{
+            margin: 0;
+            font-size: 20px;
+            color: $text-color1;
+        }
+        span{
+            color: $text-color3;
+        }
+        .btn3{
+            @extend .border-radius2;
+            min-width: 80px;
+            text-transform: capitalize;
+            margin-right: 10px;
+            span{
+                color:$whight;
+            }
+        }
+    }
+
+}
+
+.tc-line{
+    color: $text-color3;
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+    a{
+        color: $primary;
+        text-decoration: underline;
+        padding-left: 5px;
+    }
+}
+
+.tc-popup{
+    z-index: 11111;
+    .cmn-flt{
+        min-height: 100vh;
+        .q-card{
+            border-radius: 0;
+            .common-head{
+                background: $bg1;
+            }
+            .common-inner{
+                padding: 20px;
+            }
+        }
+    }
+}
+
+.mob-no .q-field__append i{
+    display: none;
+}
+.upload-portfolio{
+    .q-uploader{
+        width: 100%;
+        box-shadow: none;
+        .q-uploader__subtitle{
+            display: none;
+        }
+        .q-uploader__header{
+            background: $text-color1;
+            border-radius: 10px;
+        }
+        .q-uploader__list{
+            .q-list{
+                .q-item{
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}

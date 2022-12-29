@@ -1,0 +1,164 @@
+/***  recipe cards  ***/
+.recipe-box{
+    position: relative;
+    padding-bottom: 20px;
+    .recipe-head{
+        padding: 20px 20px 5px;
+        .user-box{
+            padding-bottom: 0;
+        }
+        .rec-user-img{
+            width: 50px;
+            height: 50px;
+            .q-img{
+                @extend .border-radius2;
+                min-height: 100%;
+                max-height: 100%;
+            }
+        }
+        .rec-user-detail{
+            padding-left: 10px;
+            font-size: 16px;
+            .user-name{
+                color: $text-color1;
+                margin-bottom: 5px;
+                line-height: 1;
+                font-weight: bold;
+                text-transform: capitalize;
+            }
+            .post-time{
+                font-size: 14px;
+                color: $text-color2;
+                line-height: 1;
+                margin: 0;
+            }
+        }
+        .recipe-head-right{
+            margin-left: auto;
+            ul{
+                padding: 0;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                li{
+                    list-style-type: none;
+                    .btn3{
+                        @extend .border-radius2;
+                    }
+                    i{
+                        font-size: 36px;
+                        width: 10px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .recipe-title{
+        padding: 0 20px;
+        h5{
+            font-size: 20px;
+            line-height: 1;
+            padding: 5px 0;
+        }
+    }
+    .recipe-img{
+        padding: 5px 20px 0;
+        .q-img{
+            @extend .border-radius3;
+        }
+        .q-img::after{
+            background: rgb(2,0,36);
+            background: linear-gradient(180deg, rgba(2,0,36,0.1516981792717087) 0%, rgba(94,98,97,0) 0%, rgba(0,0,0,0.8715861344537815) 100%);
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            content: '';
+            position: absolute;
+            height: 20%;
+        }
+        .user-view{
+            position: absolute;
+            padding: 10px 15px;
+            left: 0;
+            bottom: 0;
+            color: $whight;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .recipe-bottom{
+        padding: 0 20px;
+    }
+
+}
+.recipe-box::after{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 200px;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    @extend .background1;
+}
+
+.recipe-box.video-recipe{
+    .recipe-img{
+        .video-cus{
+            @extend .border-radius3;
+            position: relative;
+        }
+        .video-cus::after{
+            background: rgb(2,0,36);
+            background: linear-gradient(180deg, rgba(2,0,36,0.1516981792717087) 0%, rgba(94,98,97,0) 0%, rgba(0,0,0,0.8715861344537815) 100%);
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            content: '';
+            position: absolute;
+            height: 20%;
+            z-index: 111;
+        }
+    }
+
+}
+.verified-account{
+    width: 15px;
+}
+
+
+/***  video recipes  ***/
+.video-cus{
+    padding: 5px 20px 0;
+    .video-js{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @extend .border-radius3;
+        .vjs-control-bar{
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        .vjs-big-play-button{
+            position: inherit;
+            width: 50px;
+            height: 50px;
+            border: 0;
+            .vjs-icon-placeholder:before{
+                content:"\f101";
+                font-size: 0;
+                background: url('~assets/video.svg') no-repeat;
+                background-size: 65%;
+                background-position: center ;
+            }
+        }
+    }
+}
+
+
+
