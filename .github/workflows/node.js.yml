@@ -34,4 +34,4 @@ jobs:
     - run: npm install
     - run: npm install -g @quasar/cli
     - run: quasar build
-    - run: aws s3 sync dist/spa/* s3://temp-foodism-stage --acl public-read
+    - run: cd dist/spa && aws s3 sync . s3://temp-foodism-stage --acl public-read
