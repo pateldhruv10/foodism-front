@@ -11,19 +11,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
-
-      - name: Set environment
-        run: |
-          case $GITHUB_REF in
-            refs/heads/develop )
-              _env=dev
-              ;;
-            refs/heads/main )
-              _env=prod
-              ;;
-           esac
-           echo "_ENV=$_env" >> $GITHUB_ENV
-
+      
       - name: Configure Awscli
         run: |
           make awscli
